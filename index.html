@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Agrochemicals Consulting - Leading provider of agricultural chemicals and consulting services in Conakry, Guinea">
+    <title>Agrochemicals Consulting | Conakry, Guinea</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="assets/images/logo.png?v=4" alt="Agrochemicals Consulting Logo">
+                <span class="logo-text">Agrochemicals Consulting</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#products" data-i18n="nav_products">Products</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">F.A.Q</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    <li><button id="languageToggle" class="lang-btn">FR</button></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">Welcome to Agrochemicals Consulting</h1>
+            <p data-i18n="hero_subtitle">Your trusted partner for premium agricultural solutions in Conakry, Guinea</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary" data-i18n="btn_products">View All Products</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section" id="values">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="values_title">Our Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card fade-in">
+                    <div class="value-icon">⭐</div>
+                    <h3 data-i18n="val_quality_title">Quality</h3>
+                    <p data-i18n="val_quality_desc">We are committed to delivering only the highest quality products
+                        that meet international standards and exceed customer expectations.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon">🔄</div>
+                    <h3 data-i18n="val_consistency_title">Consistency</h3>
+                    <p data-i18n="val_consistency_desc">Our reliable supply chain ensures consistent product
+                        availability and dependable service you can count on year-round.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon">📈</div>
+                    <h3 data-i18n="val_performance_title">Performance</h3>
+                    <p data-i18n="val_performance_desc">We provide effective agricultural solutions that deliver
+                        measurable results and help your business thrive and grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="about_title">About Us</h2>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80"
+                        alt="Agricultural field">
+                </div>
+                <div class="about-text">
+                    <h3 data-i18n="about_subtitle">Leading Agricultural Solutions in Guinea</h3>
+                    <p data-i18n="about_text_1">Agrochemicals Consulting is a premier provider of agricultural
+                        chemicals, fertilizers, and consulting services based in Conakry, Guinea. With a commitment to
+                        excellence and sustainability, we serve farmers, agricultural businesses, and industrial clients
+                        across the region.</p>
+                    <p data-i18n="about_text_2">Our extensive product portfolio includes high-quality fertilizers, crop
+                        protection products, animal nutrition solutions, and specialized chemicals. We work closely with
+                        our clients to understand their unique needs and provide tailored solutions that drive
+                        productivity and profitability.</p>
+                    <p data-i18n="about_text_3">Backed by a team of experienced professionals and strong partnerships
+                        with leading global manufacturers, we ensure that our customers receive only the best products
+                        accompanied by expert technical support and reliable service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="products_title">Our Products</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80"
+                            alt="Fertilizers">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_fert_title">Fertilizers & Minerals</h3>
+                        <p data-i18n="prod_fert_desc">Premium quality fertilizers and mineral supplements to enhance
+                            soil fertility and maximize crop yields.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80"
+                            alt="Animal Feed">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_feed_title">Animal Feed & Nutrition</h3>
+                        <p data-i18n="prod_feed_desc">Comprehensive range of nutritional products for livestock,
+                            poultry, and aquaculture operations.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=80"
+                            alt="Chemicals">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_chem_title">Chemical Products & Additives</h3>
+                        <p data-i18n="prod_chem_desc">Industrial chemicals and food additives meeting stringent quality
+                            and safety standards.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=600&q=80" alt="Grains">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_grain_title">Grains, Wheat & Sugar</h3>
+                        <p data-i18n="prod_grain_desc">High-quality grains, wheat, sugar, and related agricultural
+                            commodities for various applications.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80"
+                            alt="Crop Protection">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_crop_title">Crop Protection Solutions</h3>
+                        <p data-i18n="prod_crop_desc">Advanced crop protection products to safeguard your investment and
+                            ensure healthy harvests.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600&q=80"
+                            alt="Dairy Products">
+                    </div>
+                    <div class="product-info">
+                        <h3 data-i18n="prod_dairy_title">Dairy & Specialty Products</h3>
+                        <p data-i18n="prod_dairy_desc">Dairy ingredients and specialty agricultural products for food
+                            processing and manufacturing.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q1">Are your products certified for quality and safety?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a1">Yes, all our products meet international quality and safety standards. We
+                            work with certified manufacturers and conduct rigorous quality control checks to ensure that
+                            every product meets the highest standards before reaching our customers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q2">Do you offer discounts for bulk or repeat orders?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a2">Absolutely! We value our long-term partners and offer competitive pricing
+                            for bulk orders and repeat customers. Contact us to discuss your specific requirements and
+                            receive a customized quote.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q3">How do you ensure product freshness and quality during delivery?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a3">We maintain strict storage conditions and use reliable logistics partners
+                            to ensure products are transported under optimal conditions. Our packaging is designed to
+                            preserve product integrity throughout the supply chain.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q4">What payment methods do you accept?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a4">We accept various payment methods including bank transfers, letters of
+                            credit, and other secure payment options. Our team will work with you to arrange a payment
+                            method that suits your business needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q5">What is your return policy?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a5">Customer satisfaction is our priority. If you receive a defective product
+                            or have concerns about quality, please contact us within 7 days of delivery. We will
+                            investigate the issue and provide an appropriate resolution.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q6">Do you supply to both businesses and individuals?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a6">Yes, we serve a diverse customer base including agricultural businesses,
+                            industrial clients, and individual farmers. Regardless of order size, we are committed to
+                            providing excellent service to all our customers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q7">Do you offer delivery or shipping services?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a7">Yes, we provide delivery services throughout Guinea and can arrange
+                            international shipping for export orders. Delivery times and costs vary based on location
+                            and order size.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <span data-i18n="faq_q8">How do I track my order?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a8">Once your order is confirmed and dispatched, we will provide you with
+                            tracking information via email or WhatsApp. You can also contact our customer service team
+                            anytime for updates on your order status.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="contact_title">Contact Us</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form fade-in">
+                    <h3 data-i18n="form_title">Leave Us A Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form_name_label">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name"
+                                data-i18n-placeholder="form_name_ph">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form_email_label">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com"
+                                data-i18n-placeholder="form_email_ph">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-i18n="form_phone_label">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+224 XXX XXX XXX"
+                                data-i18n-placeholder="form_phone_ph">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form_message_label">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us how we can help you..."
+                                data-i18n-placeholder="form_message_ph"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info fade-in">
+                    <h3 data-i18n="get_touch_title">Get In Touch</h3>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact_addr_label">Address</h4>
+                            <p>Conakry, Guinea</p>
+                            <p><em>(Full address to be added)</em></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact_phone_label">Phone</h4>
+                            <p>+224 XXX XXX XXX</p>
+                            <p><em>(Phone number to be added)</em></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact_email_label">Email</h4>
+                            <p>info@agrochem-guinea.com</p>
+                            <p><em>(Email to be updated)</em></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4 data-i18n="contact_whatsapp_label">WhatsApp</h4>
+                            <p>+224 XXX XXX XXX</p>
+                            <p><em>(WhatsApp number to be added)</em></p>
+                        </div>
+                    </div>
+
+                    <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126068.56347862248!2d-13.712894!3d9.509167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf1cd0397d2f96b5%3A0x63b4f8c57feb29bc!2sConakry%2C%20Guinea!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Agrochemicals Consulting</h3>
+            <p>Conakry, Guinea</p>
+            <p><em>(Full address to be added)</em></p>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Agrochemicals Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/224XXXXXXXXX" class="whatsapp-float" target="_blank" title="Message us on WhatsApp">
+        💬
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
