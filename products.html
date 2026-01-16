@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Our Product Catalog - Agrochemicals Consulting. Browse our range of industrial and agricultural chemicals.">
+    <title>Our Products | Agrochemicals Consulting</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="index.html#home" class="logo">
+                <img src="assets/images/logo.png?v=4" alt="Agrochemicals Consulting Logo">
+                <span class="logo-text">Agrochemicals Consulting</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="products.html" class="active" data-i18n="nav_products">Products</a></li>
+                    <li><a href="index.html#faq" data-i18n="nav_faq">F.A.Q</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                    <li><button id="languageToggle" class="lang-btn">FR</button></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Hero -->
+    <section class="hero" style="height: 40vh;">
+        <div class="hero-content">
+            <h1 data-i18n="products_page_title">Our Product Catalog</h1>
+            <p data-i18n="products_page_subtitle">Premium quality chemicals for industry and agriculture</p>
+        </div>
+    </section>
+
+    <!-- Products Layout -->
+    <section class="section">
+        <div class="container container-layout">
+
+            <!-- Sidebar Filter -->
+            <aside class="products-sidebar">
+                <div class="sidebar-sticky">
+                    <h3 data-i18n="cat_filter_title">Categories</h3>
+                    <ul class="category-nav">
+                        <li><a href="#fertilizers" data-i18n="cat_fertilizers">Fertilizers</a></li>
+                        <li><a href="#animal-feed" data-i18n="cat_animal_feed">Animal Feed</a></li>
+                        <li><a href="#industrial" data-i18n="cat_industrial">Industrial Chemicals</a></li>
+                        <li><a href="#polymers" data-i18n="cat_polymers">Polymers & Resins</a></li>
+                        <li><a href="#waxes" data-i18n="cat_waxes">Waxes & Oils</a></li>
+                        <li><a href="#minerals" data-i18n="cat_minerals">Minerals & Salts</a></li>
+                        <li><a href="#dyes" data-i18n="cat_dyes">Dyes & Surfactants</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Products Content -->
+            <div class="products-content">
+
+                <!-- 1. Fertilizers -->
+                <section id="fertilizers" class="category-section">
+                    <h2 class="category-title" data-i18n="cat_fertilizers">Fertilizers & Soil Nutrients</h2>
+                    <div class="products-grid">
+                        <!-- Urea -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_fertilizer.png" alt="Urea"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_urea_title">Urea 46%</h3>
+                                <p class="mb-1"><strong data-i18n="prod_urea_details">Granular / Prilled</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- NPK -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_fertilizer.png" alt="NPK"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_npk_title">NPK Complex</h3>
+                                <p class="mb-1"><strong data-i18n="prod_npk_details">15-15-15 / 20-10-10</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- DAP -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_fertilizer.png" alt="DAP"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_dap_title">DAP 18-46-0</h3>
+                                <p class="mb-1"><strong data-i18n="prod_dap_details">Diammonium Phosphate</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- MAP -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_fertilizer.png" alt="MAP"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_map_title">MAP 12-61-0</h3>
+                                <p class="mb-1"><strong data-i18n="prod_map_details">Monoammonium Phosphate</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- MOP -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_fertilizer.png" alt="MOP"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_mop_title">MOP (Potash)</h3>
+                                <p class="mb-1"><strong data-i18n="prod_mop_details">White / Red Granular</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Ammonium Sulfate -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_fertilizer.png"
+                                    alt="Ammonium Sulfate"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_ams_title">Ammonium Sulfate</h3>
+                                <p class="mb-1"><strong data-i18n="prod_ams_details">Crystalline / Granular</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Magnesium Sulfate -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_fertilizer.png"
+                                    alt="Magnesium Sulfate"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_mags_title">Magnesium Sulfate</h3>
+                                <p class="mb-1"><strong data-i18n="prod_mags_details">Heptahydrate (Epsom)</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Potassium Nitrate -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_fertilizer.png"
+                                    alt="Potassium Nitrate"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_pn_title">Potassium Nitrate</h3>
+                                <p class="mb-1"><strong data-i18n="prod_pn_details">NOP 13-0-46</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. Animal Feed -->
+                <section id="animal-feed" class="category-section">
+                    <h2 class="category-title" data-i18n="cat_animal_feed">Animal Feed & Commodities</h2>
+                    <div class="products-grid">
+                        <!-- Corn -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_animal_feed.png" alt="Corn"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_corn_title">Yellow Corn</h3>
+                                <p class="mb-1"><strong data-i18n="prod_corn_details">Grade 1 & 2</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Soya -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_animal_feed.png" alt="Soya"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_soya_title">Soybean Meal</h3>
+                                <p class="mb-1"><strong data-i18n="prod_soya_details">46% - 48% Protein</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Fish Meal -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_animal_feed.png" alt="Fish Meal">
+                            </div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_fish_title">Fish Meal</h3>
+                                <p class="mb-1"><strong data-i18n="prod_fish_details">65% Protein</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Wheat Bran -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_animal_feed.png" alt="Wheat Bran">
+                            </div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_wheat_title">Wheat Bran</h3>
+                                <p class="mb-1"><strong data-i18n="prod_wheat_details">Pellets / Flakes</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Sugar -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_animal_feed.png" alt="Sugar"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_sugar_title">White Sugar</h3>
+                                <p class="mb-1"><strong data-i18n="prod_sugar_details">ICUMSA 45</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Rice -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_animal_feed.png" alt="Rice"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_rice_title">White Rice</h3>
+                                <p class="mb-1"><strong data-i18n="prod_rice_details">Long / Broken / Parboiled</strong>
+                                </p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Industrial Chemicals -->
+                <section id="industrial" class="category-section">
+                    <h2 class="category-title" data-i18n="cat_industrial">Industrial Chemicals</h2>
+                    <div class="products-grid">
+                        <!-- Ammonia -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/prod_ammonia.png" alt="Ammonia"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_ammonia_title">Ammonia (Anhydrous)</h3>
+                                <p class="mb-1"><strong data-i18n="prod_ammonia_details">Refrigerant Grade</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Caustic Soda -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_industrial_chem.png"
+                                    alt="Caustic Soda"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_caustic_title">Caustic Soda</h3>
+                                <p class="mb-1"><strong data-i18n="prod_caustic_details">Flakes / Pearls 99%</strong>
+                                </p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Phosphoric Acid -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_industrial_chem.png"
+                                    alt="Phosphoric Acid"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_phos_title">Phosphoric Acid</h3>
+                                <p class="mb-1"><strong data-i18n="prod_phos_details">Food / Tech Grade 85%</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Methanol -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_industrial_chem.png" alt="Methanol">
+                            </div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_methanol_title">Methanol</h3>
+                                <p class="mb-1"><strong data-i18n="prod_methanol_details">Purity > 99.85%</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Sodium Sulfide -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_industrial_chem.png"
+                                    alt="Sodium Sulfide"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_sodsulf_title">Sodium Sulfide</h3>
+                                <p class="mb-1"><strong data-i18n="prod_sodsulf_details">Flakes 60%</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Polymers -->
+                <section id="polymers" class="category-section">
+                    <h2 class="category-title" data-i18n="cat_polymers">Polymers & Resins</h2>
+                    <div class="products-grid">
+                        <!-- HDPE -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/prod_hdpe.png" alt="HDPE"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_hdpe_title">HDPE</h3>
+                                <p class="mb-1"><strong data-i18n="prod_hdpe_details">Injection / Blow Molding</strong>
+                                </p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- PVC -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_polymers.png" alt="PVC"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_pvc_title">PVC Resin</h3>
+                                <p class="mb-1"><strong data-i18n="prod_pvc_details">Suspension Grade SG5</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- LDPE -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_polymers.png" alt="LDPE"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_ldpe_title">LDPE</h3>
+                                <p class="mb-1"><strong data-i18n="prod_ldpe_details">Film Grade</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- PET -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_polymers.png" alt="PET"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_pet_title">PET Resin</h3>
+                                <p class="mb-1"><strong data-i18n="prod_pet_details">Bottle Grade</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Waxes -->
+                <section id="waxes" class="category-section">
+                    <h2 class="category-title" data-i18n="cat_waxes">Waxes & Oils</h2>
+                    <div class="products-grid">
+                        <!-- Paraffin -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/prod_paraffin.png" alt="Paraffin"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_paraffin_title">Paraffin Wax</h3>
+                                <p class="mb-1"><strong data-i18n="prod_paraffin_details">Fully Refined</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Petroleum Jelly -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_industrial_chem.png"
+                                    alt="Petroleum Jelly"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_jelly_title">Petroleum Jelly</h3>
+                                <p class="mb-1"><strong data-i18n="prod_jelly_details">USP White / Yellow</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Base Oil -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_industrial_chem.png" alt="Base Oil">
+                            </div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_baseoil_title">Base Oil</h3>
+                                <p class="mb-1"><strong data-i18n="prod_baseoil_details">SN 150 / SN 500</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. Minerals -->
+                <section id="minerals" class="category-section">
+                    <h2 class="category-title" data-i18n="cat_minerals">Minerals & Salts</h2>
+                    <div class="products-grid">
+                        <!-- Chromium -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/prod_chromium.png" alt="Chromium"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_chromium_title">Chromium Sulfate</h3>
+                                <p class="mb-1"><strong data-i18n="prod_chromium_details">Basic (BCS)</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Dicopper -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/prod_dicopper.png" alt="Dicopper"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_dicopper_title">Dicopper Pyrophosphate</h3>
+                                <p class="mb-1"><strong data-i18n="prod_dicopper_details">Electroplating Grade</strong>
+                                </p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Copper Oxide -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/prod_copper.png" alt="Copper Oxide">
+                            </div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_copper_title">Copper(II) Oxide</h3>
+                                <p class="mb-1"><strong data-i18n="prod_copper_details">Black Powder</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Zinc Oxide -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/cat_polymers.png" alt="Zinc Oxide"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_zinc_title">Zinc Oxide</h3>
+                                <p class="mb-1"><strong data-i18n="prod_zinc_details">Rubber / Paint Grade</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 7. Dyes -->
+                <section id="dyes" class="category-section">
+                    <h2 class="category-title" data-i18n="cat_dyes">Dyes & Surfactants</h2>
+                    <div class="products-grid">
+                        <!-- SLES -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/prod_sles.png" alt="SLES"></div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_sles_title">SLES 70%</h3>
+                                <p class="mb-1"><strong data-i18n="prod_sles_details">Surfactant Paste</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                        <!-- Sulphur Black -->
+                        <div class="product-card fade-in">
+                            <div class="product-image"><img src="assets/images/prod_sulphur.png" alt="Sulphur Black">
+                            </div>
+                            <div class="product-info">
+                                <h3 data-i18n="prod_sulphur_title">Sulphur Black</h3>
+                                <p class="mb-1"><strong data-i18n="prod_sulphur_details">Sulphur Dye</strong></p>
+                                <a href="index.html#contact" class="btn btn-sm btn-primary"
+                                    data-i18n="btn_request_quote">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Agrochemicals Consulting</h3>
+            <p>Conakry, Guinea</p>
+            <p><em>(Full address to be added)</em></p>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Agrochemicals Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/224XXXXXXXXX" class="whatsapp-float" target="_blank" title="Message us on WhatsApp">
+        💬
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
