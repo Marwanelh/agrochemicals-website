@@ -257,6 +257,7 @@ h6 {
     text-align: center;
     position: relative;
     overflow: hidden;
+    will-change: transform;
 }
 
 .hero::before {

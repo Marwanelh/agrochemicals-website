@@ -33,13 +33,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Active Navigation Link on Scroll
+// Optimized Scroll Handler with Throttling
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-menu a');
+const header = document.getElementById('header');
+const hero = document.querySelector('.hero');
 
-function activateNavLink() {
-    let scrollY = window.pageYOffset;
+// Throttle function for performance optimization
+function throttle(func, delay) {
+    let lastCall = 0;
+    return function (...args) {
+        const now = new Date().getTime();
+        if (now - lastCall < delay) {
+            return;
+        }
+        lastCall = now;
+        return func(...args);
+    };
+}
 
+// Single scroll handler for all scroll-related functionality
+function handleScroll() {
+    const scrollY = window.pageYOffset;
+
+    // Header scroll effect
+    if (scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+
+    // Active navigation link tracking
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - 100;
@@ -54,20 +78,17 @@ function activateNavLink() {
             });
         }
     });
+
+    // Smooth parallax effect for hero using requestAnimationFrame
+    if (hero && scrollY < hero.offsetHeight) {
+        requestAnimationFrame(() => {
+            hero.style.transform = `translateY(${scrollY * 0.5}px)`;
+        });
+    }
 }
 
-window.addEventListener('scroll', activateNavLink);
-
-// Header Scroll Effect
-const header = document.getElementById('header');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
+// Attach single throttled scroll listener
+window.addEventListener('scroll', throttle(handleScroll, 16)); // ~60fps
 
 // FAQ Accordion
 const faqItems = document.querySelectorAll('.faq-item');
@@ -162,15 +183,6 @@ contactForm.addEventListener('submit', (e) => {
         alert('There was an error sending your message. Please try again.');
     });
     */
-});
-
-// Parallax Effect for Hero Section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
 });
 
 // Prevent form submission if spam (honeypot technique - optional)
