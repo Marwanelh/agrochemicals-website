@@ -572,4 +572,26 @@ if (langToggle) {
     });
 }
 
+// Back to Top Button Functionality
+const backToTopButton = document.getElementById('backToTop');
+
+if (backToTopButton) {
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Scroll to top when clicked
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
 console.log('Agrochemicals Consulting Website Loaded Successfully! 🌱');

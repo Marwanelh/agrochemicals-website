@@ -712,6 +712,7 @@ h6 {
     font-size: 0.9rem;
 }
 
+
 /* WhatsApp Button */
 .whatsapp-float {
     position: fixed;
@@ -736,6 +737,61 @@ h6 {
     transform: scale(1.1);
     background: #20ba5a;
 }
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background: var(--color-secondary);
+    color: var(--color-white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: var(--color-accent);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+.back-to-top:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 100px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .whatsapp-float {
+        right: 20px;
+        width: 55px;
+        height: 55px;
+    }
+}
+
 
 /* Animations */
 @keyframes fadeInUp {
