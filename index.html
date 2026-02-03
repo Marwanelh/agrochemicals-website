@@ -187,6 +187,49 @@
         </div>
     </section>
 
+    <!-- Why Choose Us Section -->
+    <section class="section why-choose-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Agrochemicals Consulting?</h2>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--color-text-light);">We're not just a supplier -
+                    we're your partner in agricultural success</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <div class="why-icon">🌍</div>
+                    <h3>Global Standards</h3>
+                    <p>All products meet international quality certifications and safety regulations</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">💰</div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Best prices in Guinea with special discounts for bulk and repeat orders</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">👨‍🔬</div>
+                    <h3>Expert Consultation</h3>
+                    <p>Free technical advice from our experienced agricultural specialists</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">📦</div>
+                    <h3>Large Inventory</h3>
+                    <p>Extensive stock ensures immediate availability of most products</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">🚚</div>
+                    <h3>Reliable Delivery</h3>
+                    <p>Fast and secure delivery throughout Guinea - on time, every time</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">🤝</div>
+                    <h3>Long-Term Partnerships</h3>
+                    <p>We build lasting relationships with flexible payment terms for trusted clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Stats Section -->
     <section class="section stats-section">
         <div class="container">
@@ -365,6 +408,57 @@
         </div>
     </section>
 
+    <!-- How to Order Section -->
+    <section class="section how-to-order">
+        <div class="container">
+            <div class="section-title">
+                <h2>How to Order</h2>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--color-text-light);">Getting started is easy -
+                    follow these simple steps</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Browse Products</h3>
+                    <p>Explore our comprehensive catalog of agricultural chemicals, fertilizers, and supplies</p>
+                    <a href="products.html" class="step-link">View Products →</a>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Contact Us</h3>
+                    <p>Reach out via phone, WhatsApp, email, or visit our office in Conakry</p>
+                    <a href="#contact" class="step-link">Contact Details →</a>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Get a Quote</h3>
+                    <p>Our team will provide pricing, availability, and delivery estimates within 24 hours</p>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Receive & Grow</h3>
+                    <p>Fast delivery throughout Guinea - then watch your agricultural success grow!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Ready to Boost Your Agricultural Production?</h2>
+                    <p>Get expert advice and premium quality products delivered to your door</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Request a Quote</a>
+                    <a href="#" class="btn btn-outline btn-large" id="downloadCatalog">📄 Download Catalog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="section faq" id="faq">
         <div class="container">
@@ -480,7 +574,13 @@
             <div class="contact-content">
                 <div class="contact-form fade-in">
                     <h3 data-i18n="form_title">Leave Us A Message</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Replace with your Web3Forms access key - Get one free at https://web3forms.com -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject"
+                            value="New Contact Form Submission from Agrochemicals Website">
+                        <input type="hidden" name="from_name" value="Agrochemicals Website">
+
                         <div class="form-group">
                             <label for="name" data-i18n="form_name_label">Name *</label>
                             <input type="text" id="name" name="name" required placeholder="Your name"
@@ -502,6 +602,7 @@
                                 data-i18n-placeholder="form_message_ph"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                        <div id="formStatus" style="margin-top: 1rem; display: none;"></div>
                     </form>
                 </div>
 

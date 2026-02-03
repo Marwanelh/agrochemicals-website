@@ -127,63 +127,71 @@ document.querySelectorAll('.fade-in').forEach(element => {
     observer.observe(element);
 });
 
-// Contact Form Handling
+// Contact Form Handling with Web3Forms
 const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const message = document.getElementById('message').value;
+        // Check if access key is set
+        const accessKey = contactForm.querySelector('[name="access_key"]').value;
+        if (accessKey === 'YOUR_ACCESS_KEY_HERE') {
+            if (formStatus) {
+                formStatus.style.display = 'block';
+                formStatus.style.color = '#f59e0b';
+                formStatus.innerHTML = '⚠️ Please configure Web3Forms access key. Visit <a href="https://web3forms.com" target="_blank">web3forms.com</a> to get your free key.';
+            }
+            return;
+        }
 
-    // Form validation
-    if (!name || !email || !message) {
-        alert('Please fill in all required fields.');
-        return;
-    }
+        const submitButton = contactForm.querySelector('[type="submit"]');
+        const originalButtonText = submitButton.textContent;
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
+        try {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
 
-    // Success message (in a real application, you would send this data to a server)
-    alert('Thank you for your message! We will get back to you soon.');
+            const formData = new FormData(contactForm);
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
 
-    // Reset form
-    contactForm.reset();
+            const data = await response.json();
 
-    // In a real implementation, you would send the form data to your server:
-    /*
-    const formData = {
-        name: name,
-        email: email,
-        phone: phone,
-        message: message
-    };
-    
-    fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert('Thank you for your message! We will get back to you soon.');
-        contactForm.reset();
-    })
-    .catch(error => {
-        alert('There was an error sending your message. Please try again.');
+            if (data.success) {
+                if (formStatus) {
+                    formStatus.style.display = 'block';
+                    formStatus.style.color = '#10b981';
+                    formStatus.textContent = '✓ Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+                }
+                contactForm.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            if (formStatus) {
+                formStatus.style.display = 'block';
+                formStatus.style.color = '#ef4444';
+                formStatus.textContent = '✗ There was an error sending your message. Please try again or contact us directly.';
+            }
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+        }
     });
-    */
-});
+}
+
+// Download Catalog Button
+const downloadCatalogBtn = document.getElementById('downloadCatalog');
+if (downloadCatalogBtn) {
+    downloadCatalogBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('📄 Product Catalog\n\nTo receive our complete product catalog:\n\n1. Contact us via WhatsApp: +224 XXX XXX XXX\n2. Email: info@agrochem-guinea.com\n3. Or fill out the contact form below\n\nWe\'ll send you our latest PDF catalog within 24 hours!');
+    });
+}
 
 // Prevent form submission if spam (honeypot technique - optional)
 // You can add this to your HTML form: <input type="text" name="website" style="display:none">
