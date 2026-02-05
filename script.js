@@ -189,7 +189,7 @@ const downloadCatalogBtn = document.getElementById('downloadCatalog');
 if (downloadCatalogBtn) {
     downloadCatalogBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('📄 Product Catalog\n\nTo receive our complete product catalog:\n\n1. Contact us via WhatsApp: +224 XXX XXX XXX\n2. Email: info@agrochem-guinea.com\n3. Or fill out the contact form below\n\nWe\'ll send you our latest PDF catalog within 24 hours!');
+        alert('📄 Product Catalog\n\nTo receive our complete product catalog:\n\n1. Contact us via WhatsApp: +212 667 078 656\n2. Email: engrais@hourmaintenance.com\n3. Or fill out the contact form below\n\nWe\'ll send you our latest PDF catalog within 24 hours!');
     });
 }
 
@@ -206,7 +206,7 @@ const translations = {
         nav_faq: "F.A.Q",
         nav_contact: "Contact",
 
-        hero_title: "Welcome to Agrochemicals Consulting",
+        hero_title: "Welcome to Engrais Hour Maintenance",
         hero_subtitle: "Your trusted partner for premium agricultural solutions in Conakry, Guinea",
         btn_products: "View All Products",
         btn_contact: "Contact Us",
@@ -221,7 +221,7 @@ const translations = {
 
         about_title: "About Us",
         about_subtitle: "Leading Agricultural Solutions in Guinea",
-        about_text_1: "Agrochemicals Consulting is a premier provider of agricultural chemicals, fertilizers, and consulting services based in Conakry, Guinea. With a commitment to excellence and sustainability, we serve farmers, agricultural businesses, and industrial clients across the region.",
+        about_text_1: "Engrais Hour Maintenance is a premier provider of agricultural chemicals, fertilizers, and consulting services based in Conakry, Guinea. With a commitment to excellence and sustainability, we serve farmers, agricultural businesses, and industrial clients across the region.",
         about_text_2: "Our extensive product portfolio includes high-quality fertilizers, crop protection products, animal nutrition solutions, and specialized chemicals. We work closely with our clients to understand their unique needs and provide tailored solutions that drive productivity and profitability.",
         about_text_3: "Backed by a team of experienced professionals and strong partnerships with leading global manufacturers, we ensure that our customers receive only the best products accompanied by expert technical support and reliable service.",
 
@@ -374,7 +374,7 @@ const translations = {
         nav_faq: "FAQ",
         nav_contact: "Contact",
 
-        hero_title: "Bienvenue chez Agrochemicals Consulting",
+        hero_title: "Bienvenue chez Engrais Hour Maintenance",
         hero_subtitle: "Votre partenaire de confiance pour des solutions agricoles premium à Conakry, Guinée",
         btn_products: "Voir Nos Produits",
         btn_contact: "Contactez-nous",
@@ -389,7 +389,7 @@ const translations = {
 
         about_title: "À Propos de Nous",
         about_subtitle: "Solutions Agricoles Leaders en Guinée",
-        about_text_1: "Agrochemicals Consulting est un fournisseur de premier plan de produits chimiques agricoles, d'engrais et de services de conseil basé à Conakry, en Guinée. Avec un engagement envers l'excellence et la durabilité, nous servons les agriculteurs, les entreprises agricoles et les clients industriels de la région.",
+        about_text_1: "Engrais Hour Maintenance est un fournisseur de premier plan de produits chimiques agricoles, d'engrais et de services de conseil basé à Conakry, en Guinée. Avec un engagement envers l'excellence et la durabilité, nous servons les agriculteurs, les entreprises agricoles et les clients industriels de la région.",
         about_text_2: "Notre vaste portefeuille de produits comprend des engrais de haute qualité, des produits de protection des cultures, des solutions de nutrition animale et des produits chimiques spécialisés. Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs besoins uniques et fournir des solutions sur mesure qui stimulent la productivité et la rentabilité.",
         about_text_3: "Soutenus par une équipe de professionnels expérimentés et des partenariats solides avec les principaux fabricants mondiaux, nous veillons à ce que nos clients reçoivent uniquement les meilleurs produits accompagnés d'un support technique expert et d'un service fiable.",
 
